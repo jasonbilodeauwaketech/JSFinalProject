@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Author: Jason Bilodeau    Date: December3, 2023-->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -9,17 +10,61 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>WEB-115 Final Project</title>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/projectJS.js"></script>
   </head>
   <body>
     <main class="container">
       <div>
-        <img src="images/banner.png" class="img-fluid  max-width: 100% "alt="Final Project Banner">
+        <img
+          src="images/banner.png"
+          class="img-fluid max-width: 100%"
+          alt="Final Project Banner"
+        />
       </div>
       <h1>Meal Plan Builder</h1>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
+      <form id="mealPlanForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="goal">Goal for the Week:</label>
+        <input type="text" id="goal" name="goal" required />
+
+        <label for="breakfast">Breakfast:</label>
+        <input type="text" id="breakfast" name="breakfast" required />
+
+        <label for="snack1">Snack 1:</label>
+        <input type="text" id="snack1" name="snack1" required />
+
+        <label for="lunch">Lunch:</label>
+        <input type="text" id="lunch" name="lunch" required />
+
+        <label for="snack2">Snack 2:</label>
+        <input type="text" id="snack2" name="snack2" required />
+
+        <label for="dinner">Dinner:</label>
+        <input type="text" id="dinner" name="dinner" required />
+
+        <button type="submit">Generate Meal Plan</button>
+        <button type="button" id="clearButton">Clear</button>
+        <button type="button" id="printButton">Print</button>
+        <button type="button" id="downloadButton">Download</button>
+      </form>
+    </main>
   </body>
 </html>
